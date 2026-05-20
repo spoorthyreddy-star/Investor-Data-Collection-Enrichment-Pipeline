@@ -1,0 +1,29 @@
+# ── Core scraping ──────────────────────────────────────────────────────────
+requests>=2.31.0
+aiohttp>=3.9.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0               # fast HTML/XML parser for BeautifulSoup
+playwright>=1.40.0        # headless browser (install browsers: playwright install chromium)
+
+# ── Data processing ────────────────────────────────────────────────────────
+pandas>=2.1.0
+numpy>=1.26.0
+openpyxl>=3.1.0           # Excel export
+rapidfuzz>=3.5.0          # fast fuzzy string matching for dedup
+
+# ── AI enrichment ──────────────────────────────────────────────────────────
+anthropic>=0.23.0         # Claude API client
+
+# ── Utilities ──────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0      # .env file support for API keys
+tqdm>=4.66.0              # progress bars
+tenacity>=8.2.0           # retry decorators
+loguru>=0.7.0             # alternative structured logging (optional)
+httpx>=0.26.0             # async HTTP (used by anthropic SDK)
+
+# ── Development / testing ──────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+black>=23.0.0
+isort>=5.12.0
+mypy>=1.7.0

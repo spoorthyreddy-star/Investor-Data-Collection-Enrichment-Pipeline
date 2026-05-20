@@ -1,0 +1,92 @@
+2026-05-19 09:21:17 | INFO     | cleaning.deduplicator | Starting deduplication on 168 records …
+2026-05-19 09:21:17 | INFO     | cleaning.deduplicator |   After exact dedup: 129 records (removed 39)
+2026-05-19 09:21:17 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 129 records (removed 0)
+2026-05-19 09:21:17 | INFO     | cleaning.deduplicator | Deduplication complete: 129 unique records
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After exact dedup: 1 records (removed 1)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 0)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After exact dedup: 2 records (removed 0)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 2 records (removed 0)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Deduplication complete: 2 unique records
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After exact dedup: 1 records (removed 1)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 0)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Starting deduplication on 5 records …
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After exact dedup: 5 records (removed 0)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 5 records (removed 0)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Deduplication complete: 5 unique records
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Starting deduplication on 3 records …
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After exact dedup: 2 records (removed 1)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 1)
+2026-05-19 09:21:27 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After exact dedup: 1 records (removed 1)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 0)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After exact dedup: 2 records (removed 0)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 2 records (removed 0)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Deduplication complete: 2 unique records
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After exact dedup: 1 records (removed 1)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 0)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Starting deduplication on 5 records …
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After exact dedup: 5 records (removed 0)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 5 records (removed 0)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Deduplication complete: 5 unique records
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Starting deduplication on 3 records …
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After exact dedup: 2 records (removed 1)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 1)
+2026-05-19 09:21:36 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After exact dedup: 1 records (removed 1)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 0)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After exact dedup: 2 records (removed 0)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 2 records (removed 0)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Deduplication complete: 2 unique records
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Starting deduplication on 2 records …
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After exact dedup: 1 records (removed 1)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 0)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Starting deduplication on 5 records …
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After exact dedup: 5 records (removed 0)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 5 records (removed 0)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Deduplication complete: 5 unique records
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Starting deduplication on 3 records …
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After exact dedup: 2 records (removed 1)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1 records (removed 1)
+2026-05-19 09:21:49 | INFO     | cleaning.deduplicator | Deduplication complete: 1 unique records
+2026-05-19 15:21:27 | INFO     | cleaning.deduplicator | Starting deduplication on 168 records …
+2026-05-19 15:21:27 | INFO     | cleaning.deduplicator |   After exact dedup: 129 records (removed 39)
+2026-05-19 15:21:27 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 129 records (removed 0)
+2026-05-19 15:21:27 | INFO     | cleaning.deduplicator | Deduplication complete: 129 unique records
+2026-05-19 15:31:45 | INFO     | cleaning.deduplicator | Starting deduplication on 168 records …
+2026-05-19 15:31:45 | INFO     | cleaning.deduplicator |   After exact dedup: 129 records (removed 39)
+2026-05-19 15:31:45 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 129 records (removed 0)
+2026-05-19 15:31:45 | INFO     | cleaning.deduplicator | Deduplication complete: 129 unique records
+2026-05-19 16:01:21 | INFO     | cleaning.deduplicator | Starting deduplication on 2668 records …
+2026-05-19 16:01:21 | INFO     | cleaning.deduplicator |   After exact dedup: 2629 records (removed 39)
+2026-05-19 16:01:22 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1940 records (removed 689)
+2026-05-19 16:01:22 | INFO     | cleaning.deduplicator | Deduplication complete: 1940 unique records
+2026-05-19 16:10:07 | INFO     | cleaning.deduplicator | Starting deduplication on 3268 records …
+2026-05-19 16:10:07 | INFO     | cleaning.deduplicator |   After exact dedup: 3229 records (removed 39)
+2026-05-19 16:10:08 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 1962 records (removed 1267)
+2026-05-19 16:10:08 | INFO     | cleaning.deduplicator | Deduplication complete: 1962 unique records
+2026-05-19 16:15:59 | INFO     | cleaning.deduplicator | Starting deduplication on 3418 records …
+2026-05-19 16:15:59 | INFO     | cleaning.deduplicator |   After exact dedup: 3379 records (removed 39)
+2026-05-19 16:16:00 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 2112 records (removed 1267)
+2026-05-19 16:16:00 | INFO     | cleaning.deduplicator | Deduplication complete: 2112 unique records
+2026-05-19 17:38:44 | INFO     | cleaning.deduplicator | Starting deduplication on 3418 records …
+2026-05-19 17:38:44 | INFO     | cleaning.deduplicator |   After exact dedup: 3379 records (removed 39)
+2026-05-19 17:38:45 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 2112 records (removed 1267)
+2026-05-19 17:38:45 | INFO     | cleaning.deduplicator | Deduplication complete: 2112 unique records
+2026-05-19 22:19:11 | INFO     | cleaning.deduplicator | Starting deduplication on 3418 records …
+2026-05-19 22:19:11 | INFO     | cleaning.deduplicator |   After exact dedup: 3379 records (removed 39)
+2026-05-19 22:19:12 | INFO     | cleaning.deduplicator |   After fuzzy dedup: 2112 records (removed 1267)
+2026-05-19 22:19:12 | INFO     | cleaning.deduplicator | Deduplication complete: 2112 unique records

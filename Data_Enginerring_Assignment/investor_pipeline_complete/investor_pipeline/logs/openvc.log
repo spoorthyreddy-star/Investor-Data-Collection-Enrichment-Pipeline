@@ -1,0 +1,40 @@
+2026-05-19 09:20:43 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 09:20:43 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 09:20:46 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 403 Client Error: Forbidden for url: https://openvc.app/vcs?page=1
+2026-05-19 09:20:46 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 09:20:46 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records
+2026-05-19 15:20:43 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 15:20:43 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 15:20:47 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 404 Client Error: Not Found for url: https://www.openvc.app/vcs?page=1
+2026-05-19 15:20:47 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 15:20:47 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records
+2026-05-19 15:31:02 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 15:31:02 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 15:31:05 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 404 Client Error: Not Found for url: https://www.openvc.app/vcs?page=1
+2026-05-19 15:31:05 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 15:31:05 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records
+2026-05-19 16:00:39 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 16:00:39 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 16:00:43 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 404 Client Error: Not Found for url: https://www.openvc.app/vcs?page=1
+2026-05-19 16:00:43 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 16:00:43 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records
+2026-05-19 16:09:26 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 16:09:26 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 16:09:30 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 404 Client Error: Not Found for url: https://www.openvc.app/vcs?page=1
+2026-05-19 16:09:30 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 16:09:30 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records
+2026-05-19 16:15:19 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 16:15:19 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 16:15:21 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 404 Client Error: Not Found for url: https://www.openvc.app/vcs?page=1
+2026-05-19 16:15:21 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 16:15:21 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records
+2026-05-19 17:38:01 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 17:38:01 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 17:38:06 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 404 Client Error: Not Found for url: https://www.openvc.app/vcs?page=1
+2026-05-19 17:38:06 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 17:38:06 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records
+2026-05-19 22:18:30 | INFO     | scraper.openvc | Starting OpenVC scrape (max 50 pages)
+2026-05-19 22:18:30 | INFO     | scraper.openvc |   Fetching page 1/50
+2026-05-19 22:18:33 | WARNING  | scraper.openvc | GET failed [https://openvc.app/vcs]: 404 Client Error: Not Found for url: https://www.openvc.app/vcs?page=1
+2026-05-19 22:18:33 | WARNING  | scraper.openvc |   Empty response on page 1, stopping.
+2026-05-19 22:18:33 | INFO     | scraper.openvc | OpenVC scrape complete: 0 records

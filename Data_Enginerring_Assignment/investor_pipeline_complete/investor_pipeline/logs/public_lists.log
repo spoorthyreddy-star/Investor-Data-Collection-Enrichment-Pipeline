@@ -1,0 +1,32 @@
+2026-05-19 09:20:41 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 09:20:43 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 403 Client Error: Forbidden for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 09:20:43 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 09:20:43 | INFO     | scraper.public_lists | PublicLists total: 118 records
+2026-05-19 15:20:39 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 15:20:43 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 15:20:43 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 15:20:43 | INFO     | scraper.public_lists | PublicLists total: 118 records
+2026-05-19 15:31:00 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 15:31:02 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 15:31:02 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 15:31:02 | INFO     | scraper.public_lists | PublicLists total: 118 records
+2026-05-19 16:00:36 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 16:00:39 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 16:00:39 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 16:00:39 | INFO     | scraper.public_lists | PublicLists total: 118 records
+2026-05-19 16:09:24 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 16:09:26 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 16:09:26 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 16:09:26 | INFO     | scraper.public_lists | PublicLists total: 118 records
+2026-05-19 16:15:15 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 16:15:19 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 16:15:19 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 16:15:19 | INFO     | scraper.public_lists | PublicLists total: 118 records
+2026-05-19 17:37:57 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 17:38:01 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 17:38:01 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 17:38:01 | INFO     | scraper.public_lists | PublicLists total: 118 records
+2026-05-19 22:18:28 | INFO     | scraper.public_lists | Loaded 118 curated investor records
+2026-05-19 22:18:30 | WARNING  | scraper.public_lists | GET failed [https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json]: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 22:18:30 | INFO     | scraper.public_lists |   + 0 from https://raw.githubusercontent.com/dakshvar22/VC-Funds-of-Funds/master/data.json
+2026-05-19 22:18:30 | INFO     | scraper.public_lists | PublicLists total: 118 records

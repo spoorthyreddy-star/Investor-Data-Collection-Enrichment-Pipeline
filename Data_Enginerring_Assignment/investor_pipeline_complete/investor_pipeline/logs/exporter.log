@@ -1,0 +1,72 @@
+2026-05-19 09:21:17 | INFO     | export.exporter | Exporting 129 records to /home/claude/investor_pipeline/output
+2026-05-19 09:21:17 | INFO     | export.exporter |   CSV: 129 rows → /home/claude/investor_pipeline/output/Investor_Dataset.csv
+2026-05-19 09:21:17 | INFO     | export.exporter |   JSON: 129 records → /home/claude/investor_pipeline/output/Investor_Dataset.json
+2026-05-19 09:21:17 | INFO     | export.exporter |   Excel: 129 rows → /home/claude/investor_pipeline/output/Investor_Dataset.xlsx
+2026-05-19 09:21:17 | INFO     | export.exporter | Export complete:
+2026-05-19 09:21:17 | INFO     | export.exporter |   csv     : /home/claude/investor_pipeline/output/Investor_Dataset.csv
+2026-05-19 09:21:17 | INFO     | export.exporter |   json    : /home/claude/investor_pipeline/output/Investor_Dataset.json
+2026-05-19 09:21:17 | INFO     | export.exporter |   excel   : /home/claude/investor_pipeline/output/Investor_Dataset.xlsx
+2026-05-19 09:21:17 | INFO     | export.exporter |   summary : /home/claude/investor_pipeline/output/pipeline_summary.json
+2026-05-19 15:21:27 | INFO     | export.exporter | Exporting 129 records to C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output
+2026-05-19 15:21:27 | INFO     | export.exporter |   CSV: 129 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 15:21:27 | INFO     | export.exporter |   JSON: 129 records → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 15:21:27 | INFO     | export.exporter |   Excel: 129 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 15:21:27 | INFO     | export.exporter | Export complete:
+2026-05-19 15:21:27 | INFO     | export.exporter |   csv     : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 15:21:27 | INFO     | export.exporter |   json    : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 15:21:27 | INFO     | export.exporter |   excel   : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 15:21:27 | INFO     | export.exporter |   summary : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\pipeline_summary.json
+2026-05-19 15:31:45 | INFO     | export.exporter | Exporting 129 records to C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output
+2026-05-19 15:31:45 | INFO     | export.exporter |   CSV: 129 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 15:31:45 | INFO     | export.exporter |   JSON: 129 records → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 15:31:46 | INFO     | export.exporter |   Excel: 129 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 15:31:46 | INFO     | export.exporter | Export complete:
+2026-05-19 15:31:46 | INFO     | export.exporter |   csv     : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 15:31:46 | INFO     | export.exporter |   json    : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 15:31:46 | INFO     | export.exporter |   excel   : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 15:31:46 | INFO     | export.exporter |   summary : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\pipeline_summary.json
+2026-05-19 16:01:22 | INFO     | export.exporter | Exporting 1940 records to C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output
+2026-05-19 16:01:22 | INFO     | export.exporter |   CSV: 1940 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 16:01:22 | INFO     | export.exporter |   JSON: 1940 records → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 16:01:23 | INFO     | export.exporter |   Excel: 1940 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 16:01:23 | INFO     | export.exporter | Export complete:
+2026-05-19 16:01:23 | INFO     | export.exporter |   csv     : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 16:01:23 | INFO     | export.exporter |   json    : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 16:01:23 | INFO     | export.exporter |   excel   : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 16:01:23 | INFO     | export.exporter |   summary : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\pipeline_summary.json
+2026-05-19 16:10:08 | INFO     | export.exporter | Exporting 1962 records to C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output
+2026-05-19 16:10:08 | INFO     | export.exporter |   CSV: 1962 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 16:10:08 | INFO     | export.exporter |   JSON: 1962 records → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 16:10:09 | INFO     | export.exporter |   Excel: 1962 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 16:10:09 | INFO     | export.exporter | Export complete:
+2026-05-19 16:10:09 | INFO     | export.exporter |   csv     : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 16:10:09 | INFO     | export.exporter |   json    : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 16:10:09 | INFO     | export.exporter |   excel   : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 16:10:09 | INFO     | export.exporter |   summary : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\pipeline_summary.json
+2026-05-19 16:16:01 | INFO     | export.exporter | Exporting 2112 records to C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output
+2026-05-19 16:16:01 | INFO     | export.exporter |   CSV: 2112 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 16:16:01 | INFO     | export.exporter |   JSON: 2112 records → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 16:16:02 | INFO     | export.exporter |   Excel: 2112 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 16:16:02 | INFO     | export.exporter | Export complete:
+2026-05-19 16:16:02 | INFO     | export.exporter |   csv     : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 16:16:02 | INFO     | export.exporter |   json    : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 16:16:02 | INFO     | export.exporter |   excel   : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 16:16:02 | INFO     | export.exporter |   summary : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\pipeline_summary.json
+2026-05-19 17:38:45 | INFO     | export.exporter | Exporting 2112 records to C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output
+2026-05-19 17:38:46 | INFO     | export.exporter |   CSV: 2112 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 17:38:46 | INFO     | export.exporter |   JSON: 2112 records → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 17:38:47 | INFO     | export.exporter |   Excel: 2112 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 17:38:47 | INFO     | export.exporter | Export complete:
+2026-05-19 17:38:47 | INFO     | export.exporter |   csv     : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 17:38:47 | INFO     | export.exporter |   json    : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 17:38:47 | INFO     | export.exporter |   excel   : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 17:38:47 | INFO     | export.exporter |   summary : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\pipeline_summary.json
+2026-05-19 22:19:13 | INFO     | export.exporter | Exporting 2112 records to C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output
+2026-05-19 22:19:13 | INFO     | export.exporter |   CSV: 2112 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 22:19:13 | INFO     | export.exporter |   JSON: 2112 records → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 22:19:14 | INFO     | export.exporter |   Excel: 2112 rows → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 22:19:14 | INFO     | export.exporter | Export complete:
+2026-05-19 22:19:14 | INFO     | export.exporter |   csv     : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.csv
+2026-05-19 22:19:14 | INFO     | export.exporter |   json    : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.json
+2026-05-19 22:19:14 | INFO     | export.exporter |   excel   : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\Investor_Dataset.xlsx
+2026-05-19 22:19:14 | INFO     | export.exporter |   summary : C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\pipeline_summary.json

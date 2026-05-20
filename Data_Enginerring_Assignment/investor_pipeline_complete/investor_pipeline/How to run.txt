@@ -1,0 +1,10 @@
+Commands to execute pipeline_runner.py file
+
+
+cd investor_pipeline_complete\investor_pipeline
+
+dir
+
+python -m pip install -r requirements.txt
+
+python pipeline_runner.py

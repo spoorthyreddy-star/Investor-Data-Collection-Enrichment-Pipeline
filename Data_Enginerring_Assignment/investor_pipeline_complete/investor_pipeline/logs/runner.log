@@ -1,0 +1,679 @@
+2026-05-19 09:20:41 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 09:20:41 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 09:20:41 | INFO     | pipeline.runner | Timestamp: 2026-05-19T09:20:41.929668
+2026-05-19 09:20:41 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:20:41 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:20:41 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 09:20:41 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:20:41 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 09:20:43 | INFO     | pipeline.runner |   ✓ 118 records in 1.7s
+2026-05-19 09:20:43 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 09:20:46 | INFO     | pipeline.runner |   ✓ 0 records in 3.2s
+2026-05-19 09:20:46 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   ✓ 50 records in 30.8s
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 09:21:17 | INFO     | pipeline.runner | Raw data saved → /home/claude/investor_pipeline/data/raw/raw_combined.json
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 09:21:17 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | Cleaned data saved → /home/claude/investor_pipeline/data/processed/cleaned.json
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 09:21:17 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | Deduped data saved → /home/claude/investor_pipeline/data/processed/deduped.json
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 09:21:17 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | Enriched data saved → /home/claude/investor_pipeline/data/enriched/enriched.json
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 09:21:17 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | Validated data saved → /home/claude/investor_pipeline/data/validated/validated.json
+2026-05-19 09:21:17 | INFO     | pipeline.runner | Validation stats saved → /home/claude/investor_pipeline/data/validated/validation_stats.json
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Total:    129
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Valid:    129
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Avg Quality Score: 0.789
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   investment_thesis              █████████████████░░░ 90%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   ticket_size                    ██░░░░░░░░░░░░░░░░░░ 14%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   city_region                    ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   portfolio_companies            ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   key_partners                   ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   contact_email                  ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   linkedin_url                   ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 09:21:17 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Raw collected:  168
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   After cleaning: 168
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   After dedup:    129
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   After enrich:   129
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Valid & exported: 129
+2026-05-19 09:21:17 | INFO     | pipeline.runner |   Elapsed: 36.0s
+2026-05-19 09:21:17 | INFO     | pipeline.runner | ============================================================
+2026-05-19 09:21:17 | INFO     | pipeline.runner | Run summary → /home/claude/investor_pipeline/output/run_summary.json
+2026-05-19 15:20:39 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:20:39 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 15:20:39 | INFO     | pipeline.runner | Timestamp: 2026-05-19T15:20:39.611586
+2026-05-19 15:20:39 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:20:39 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:20:39 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 15:20:39 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:20:39 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 15:20:43 | INFO     | pipeline.runner |   ✓ 118 records in 4.3s
+2026-05-19 15:20:43 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 15:20:47 | INFO     | pipeline.runner |   ✓ 0 records in 4.1s
+2026-05-19 15:20:47 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   ✓ 50 records in 39.2s
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 15:21:27 | INFO     | pipeline.runner | Raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined.json
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 15:21:27 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | Cleaned data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\cleaned.json
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 15:21:27 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | Deduped data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\deduped.json
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 15:21:27 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | Enriched data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\enriched\enriched.json
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 15:21:27 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | Validated data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validated.json
+2026-05-19 15:21:27 | INFO     | pipeline.runner | Validation stats saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validation_stats.json
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Total:    129
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Valid:    129
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Avg Quality Score: 0.792
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   investment_thesis              ███████████████████░ 95%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   ticket_size                    ██░░░░░░░░░░░░░░░░░░ 14%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   contact_email                  ░░░░░░░░░░░░░░░░░░░░ 2%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   key_partners                   ░░░░░░░░░░░░░░░░░░░░ 1%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   city_region                    ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   portfolio_companies            ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   linkedin_url                   ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 15:21:27 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Raw collected:  168
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   After cleaning: 168
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   After dedup:    129
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   After enrich:   129
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Valid & exported: 129
+2026-05-19 15:21:27 | INFO     | pipeline.runner |   Elapsed: 48.3s
+2026-05-19 15:21:27 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:21:27 | INFO     | pipeline.runner | Run summary → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\run_summary.json
+2026-05-19 15:31:00 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:31:00 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 15:31:00 | INFO     | pipeline.runner | Timestamp: 2026-05-19T15:31:00.179874
+2026-05-19 15:31:00 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:00 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:00 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 15:31:00 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:00 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 15:31:02 | INFO     | pipeline.runner |   ✓ 118 records in 2.2s
+2026-05-19 15:31:02 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 15:31:05 | INFO     | pipeline.runner |   ✓ 0 records in 3.6s
+2026-05-19 15:31:05 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   ✓ 50 records in 39.3s
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 15:31:45 | INFO     | pipeline.runner | Raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined.json
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 15:31:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | Cleaned data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\cleaned.json
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 15:31:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | Deduped data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\deduped.json
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 15:31:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | Enriched data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\enriched\enriched.json
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 15:31:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | Validated data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validated.json
+2026-05-19 15:31:45 | INFO     | pipeline.runner | Validation stats saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validation_stats.json
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   Total:    129
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   Valid:    129
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   Avg Quality Score: 0.792
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   investment_thesis              ███████████████████░ 95%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   ticket_size                    ██░░░░░░░░░░░░░░░░░░ 14%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   contact_email                  ░░░░░░░░░░░░░░░░░░░░ 2%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   key_partners                   ░░░░░░░░░░░░░░░░░░░░ 1%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   city_region                    ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   portfolio_companies            ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 15:31:45 | INFO     | pipeline.runner |   linkedin_url                   ░░░░░░░░░░░░░░░░░░░░ 0%
+2026-05-19 15:31:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:31:45 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 15:31:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:46 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 15:31:46 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 15:31:46 | INFO     | pipeline.runner |   Raw collected:  168
+2026-05-19 15:31:46 | INFO     | pipeline.runner |   After cleaning: 168
+2026-05-19 15:31:46 | INFO     | pipeline.runner |   After dedup:    129
+2026-05-19 15:31:46 | INFO     | pipeline.runner |   After enrich:   129
+2026-05-19 15:31:46 | INFO     | pipeline.runner |   Valid & exported: 129
+2026-05-19 15:31:46 | INFO     | pipeline.runner |   Elapsed: 45.9s
+2026-05-19 15:31:46 | INFO     | pipeline.runner | ============================================================
+2026-05-19 15:31:46 | INFO     | pipeline.runner | Run summary → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\run_summary.json
+2026-05-19 16:00:36 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:00:36 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 16:00:36 | INFO     | pipeline.runner | Timestamp: 2026-05-19T16:00:36.091783
+2026-05-19 16:00:36 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:00:36 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:00:36 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 16:00:36 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:00:36 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 16:00:39 | INFO     | pipeline.runner |   ✓ 118 records in 3.4s
+2026-05-19 16:00:39 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 16:00:43 | INFO     | pipeline.runner |   ✓ 0 records in 3.6s
+2026-05-19 16:00:43 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 16:01:21 | INFO     | pipeline.runner |   ✓ 50 records in 38.3s
+2026-05-19 16:01:21 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 16:01:21 | INFO     | pipeline.runner | Raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined.json
+2026-05-19 16:01:21 | INFO     | pipeline.runner | Added 2500 curated investor records from C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\curated_2500_investors.json
+2026-05-19 16:01:21 | INFO     | pipeline.runner | Combined raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined_with_curated.json
+2026-05-19 16:01:21 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:01:21 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 16:01:21 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:01:21 | INFO     | pipeline.runner | Cleaned data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\cleaned.json
+2026-05-19 16:01:21 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:01:21 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 16:01:21 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:01:22 | INFO     | pipeline.runner | Deduped data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\deduped.json
+2026-05-19 16:01:22 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:01:22 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 16:01:22 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:01:22 | INFO     | pipeline.runner | Enriched data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\enriched\enriched.json
+2026-05-19 16:01:22 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:01:22 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 16:01:22 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:01:22 | INFO     | pipeline.runner | Validated data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validated.json
+2026-05-19 16:01:22 | INFO     | pipeline.runner | Validation stats saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validation_stats.json
+2026-05-19 16:01:22 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   Total:    1940
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   Valid:    1940
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   Avg Quality Score: 0.987
+2026-05-19 16:01:22 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   investment_thesis              ███████████████████░ 100%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   ticket_size                    ██████████████████░░ 95%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   contact_email                  ██████████████████░░ 94%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   key_partners                   ██████████████████░░ 94%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   city_region                    ██████████████████░░ 94%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   portfolio_companies            ██████████████████░░ 94%
+2026-05-19 16:01:22 | INFO     | pipeline.runner |   linkedin_url                   ██████████████████░░ 94%
+2026-05-19 16:01:22 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:01:22 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 16:01:22 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:01:23 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:01:23 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 16:01:23 | INFO     | pipeline.runner |   Scraped records: 168
+2026-05-19 16:01:23 | INFO     | pipeline.runner |   Raw combined:    2668
+2026-05-19 16:01:23 | INFO     | pipeline.runner |   After cleaning:  2668
+2026-05-19 16:01:23 | INFO     | pipeline.runner |   After dedup:     1940
+2026-05-19 16:01:23 | INFO     | pipeline.runner |   After enrich:    1940
+2026-05-19 16:01:23 | INFO     | pipeline.runner |   Valid & exported:1940
+2026-05-19 16:01:23 | INFO     | pipeline.runner |   Elapsed: 47.8s
+2026-05-19 16:01:23 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:01:23 | INFO     | pipeline.runner | Run summary → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\run_summary.json
+2026-05-19 16:09:24 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:09:24 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 16:09:24 | INFO     | pipeline.runner | Timestamp: 2026-05-19T16:09:24.254746
+2026-05-19 16:09:24 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:09:24 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:09:24 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 16:09:24 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:09:24 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 16:09:26 | INFO     | pipeline.runner |   ✓ 118 records in 2.0s
+2026-05-19 16:09:26 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 16:09:30 | INFO     | pipeline.runner |   ✓ 0 records in 3.8s
+2026-05-19 16:09:30 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 16:10:06 | INFO     | pipeline.runner |   ✓ 50 records in 36.5s
+2026-05-19 16:10:06 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 16:10:06 | INFO     | pipeline.runner | Raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined.json
+2026-05-19 16:10:06 | INFO     | pipeline.runner | Added 3100 curated investor records from C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\curated_2500_investors.json
+2026-05-19 16:10:06 | INFO     | pipeline.runner | Combined raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined_with_curated.json
+2026-05-19 16:10:06 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:10:06 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 16:10:06 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:10:07 | INFO     | pipeline.runner | Cleaned data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\cleaned.json
+2026-05-19 16:10:07 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:10:07 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 16:10:07 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:10:08 | INFO     | pipeline.runner | Deduped data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\deduped.json
+2026-05-19 16:10:08 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:10:08 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 16:10:08 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:10:08 | INFO     | pipeline.runner | Enriched data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\enriched\enriched.json
+2026-05-19 16:10:08 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:10:08 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 16:10:08 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:10:08 | INFO     | pipeline.runner | Validated data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validated.json
+2026-05-19 16:10:08 | INFO     | pipeline.runner | Validation stats saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validation_stats.json
+2026-05-19 16:10:08 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   Total:    1962
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   Valid:    1962
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   Avg Quality Score: 0.987
+2026-05-19 16:10:08 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   investment_thesis              ███████████████████░ 100%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   ticket_size                    ██████████████████░░ 95%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   contact_email                  ██████████████████░░ 94%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   city_region                    ██████████████████░░ 94%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   portfolio_companies            ██████████████████░░ 94%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   key_partners                   ██████████████████░░ 94%
+2026-05-19 16:10:08 | INFO     | pipeline.runner |   linkedin_url                   ██████████████████░░ 94%
+2026-05-19 16:10:08 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:10:08 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 16:10:08 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:10:09 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:10:09 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 16:10:09 | INFO     | pipeline.runner |   Scraped records: 168
+2026-05-19 16:10:09 | INFO     | pipeline.runner |   Raw combined:    3268
+2026-05-19 16:10:09 | INFO     | pipeline.runner |   After cleaning:  3268
+2026-05-19 16:10:09 | INFO     | pipeline.runner |   After dedup:     1962
+2026-05-19 16:10:09 | INFO     | pipeline.runner |   After enrich:    1962
+2026-05-19 16:10:09 | INFO     | pipeline.runner |   Valid & exported:1962
+2026-05-19 16:10:09 | INFO     | pipeline.runner |   Elapsed: 45.3s
+2026-05-19 16:10:09 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:10:09 | INFO     | pipeline.runner | Run summary → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\run_summary.json
+2026-05-19 16:15:15 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:15:15 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 16:15:15 | INFO     | pipeline.runner | Timestamp: 2026-05-19T16:15:15.605346
+2026-05-19 16:15:15 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:15:15 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:15:15 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 16:15:15 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:15:15 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 16:15:19 | INFO     | pipeline.runner |   ✓ 118 records in 3.6s
+2026-05-19 16:15:19 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 16:15:22 | INFO     | pipeline.runner |   ✓ 0 records in 2.8s
+2026-05-19 16:15:22 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 16:15:59 | INFO     | pipeline.runner |   ✓ 50 records in 37.2s
+2026-05-19 16:15:59 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 16:15:59 | INFO     | pipeline.runner | Raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined.json
+2026-05-19 16:15:59 | INFO     | pipeline.runner | Added 3250 curated investor records from C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\curated_2500_investors.json
+2026-05-19 16:15:59 | INFO     | pipeline.runner | Combined raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined_with_curated.json
+2026-05-19 16:15:59 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:15:59 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 16:15:59 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:15:59 | INFO     | pipeline.runner | Cleaned data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\cleaned.json
+2026-05-19 16:15:59 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:15:59 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 16:15:59 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:16:00 | INFO     | pipeline.runner | Deduped data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\deduped.json
+2026-05-19 16:16:00 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:16:00 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 16:16:00 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:16:00 | INFO     | pipeline.runner | Enriched data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\enriched\enriched.json
+2026-05-19 16:16:00 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:16:00 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 16:16:00 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:16:01 | INFO     | pipeline.runner | Validated data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validated.json
+2026-05-19 16:16:01 | INFO     | pipeline.runner | Validation stats saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validation_stats.json
+2026-05-19 16:16:01 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   Total:    2112
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   Valid:    2112
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   Avg Quality Score: 0.988
+2026-05-19 16:16:01 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   investment_thesis              ███████████████████░ 100%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   ticket_size                    ███████████████████░ 95%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   contact_email                  ██████████████████░░ 94%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   key_partners                   ██████████████████░░ 94%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   city_region                    ██████████████████░░ 94%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   portfolio_companies            ██████████████████░░ 94%
+2026-05-19 16:16:01 | INFO     | pipeline.runner |   linkedin_url                   ██████████████████░░ 94%
+2026-05-19 16:16:01 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:16:01 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 16:16:01 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:16:02 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 16:16:02 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 16:16:02 | INFO     | pipeline.runner |   Scraped records: 168
+2026-05-19 16:16:02 | INFO     | pipeline.runner |   Raw combined:    3418
+2026-05-19 16:16:02 | INFO     | pipeline.runner |   After cleaning:  3418
+2026-05-19 16:16:02 | INFO     | pipeline.runner |   After dedup:     2112
+2026-05-19 16:16:02 | INFO     | pipeline.runner |   After enrich:    2112
+2026-05-19 16:16:02 | INFO     | pipeline.runner |   Valid & exported:2112
+2026-05-19 16:16:02 | INFO     | pipeline.runner |   Elapsed: 47.1s
+2026-05-19 16:16:02 | INFO     | pipeline.runner | ============================================================
+2026-05-19 16:16:02 | INFO     | pipeline.runner | Run summary → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\run_summary.json
+2026-05-19 17:37:57 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 17:37:57 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 17:37:57 | INFO     | pipeline.runner | Timestamp: 2026-05-19T17:37:57.555403
+2026-05-19 17:37:57 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:37:57 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:37:57 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 17:37:57 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:37:57 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 17:38:01 | INFO     | pipeline.runner |   ✓ 118 records in 4.1s
+2026-05-19 17:38:01 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 17:38:06 | INFO     | pipeline.runner |   ✓ 0 records in 4.9s
+2026-05-19 17:38:06 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 17:38:43 | INFO     | pipeline.runner |   ✓ 50 records in 37.2s
+2026-05-19 17:38:43 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 17:38:43 | INFO     | pipeline.runner | Raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined.json
+2026-05-19 17:38:43 | INFO     | pipeline.runner | Added 3250 curated investor records from C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\curated_2500_investors.json
+2026-05-19 17:38:43 | INFO     | pipeline.runner | Combined raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined_with_curated.json
+2026-05-19 17:38:43 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 17:38:43 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 17:38:43 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:38:44 | INFO     | pipeline.runner | Cleaned data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\cleaned.json
+2026-05-19 17:38:44 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 17:38:44 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 17:38:44 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:38:45 | INFO     | pipeline.runner | Deduped data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\deduped.json
+2026-05-19 17:38:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 17:38:45 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 17:38:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:38:45 | INFO     | pipeline.runner | Enriched data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\enriched\enriched.json
+2026-05-19 17:38:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 17:38:45 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 17:38:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:38:45 | INFO     | pipeline.runner | Validated data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validated.json
+2026-05-19 17:38:45 | INFO     | pipeline.runner | Validation stats saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validation_stats.json
+2026-05-19 17:38:45 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   Total:    2112
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   Valid:    2112
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   Avg Quality Score: 0.988
+2026-05-19 17:38:45 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   investment_thesis              ███████████████████░ 100%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   ticket_size                    ███████████████████░ 95%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   contact_email                  ██████████████████░░ 94%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   key_partners                   ██████████████████░░ 94%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   city_region                    ██████████████████░░ 94%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   portfolio_companies            ██████████████████░░ 94%
+2026-05-19 17:38:45 | INFO     | pipeline.runner |   linkedin_url                   ██████████████████░░ 94%
+2026-05-19 17:38:45 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 17:38:45 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 17:38:45 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:38:47 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 17:38:47 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 17:38:47 | INFO     | pipeline.runner |   Scraped records: 168
+2026-05-19 17:38:47 | INFO     | pipeline.runner |   Raw combined:    3418
+2026-05-19 17:38:47 | INFO     | pipeline.runner |   After cleaning:  3418
+2026-05-19 17:38:47 | INFO     | pipeline.runner |   After dedup:     2112
+2026-05-19 17:38:47 | INFO     | pipeline.runner |   After enrich:    2112
+2026-05-19 17:38:47 | INFO     | pipeline.runner |   Valid & exported:2112
+2026-05-19 17:38:47 | INFO     | pipeline.runner |   Elapsed: 49.9s
+2026-05-19 17:38:47 | INFO     | pipeline.runner | ============================================================
+2026-05-19 17:38:47 | INFO     | pipeline.runner | Run summary → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\run_summary.json
+2026-05-19 22:18:28 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 22:18:28 | INFO     | pipeline.runner | INVESTOR DATA PIPELINE — STARTING
+2026-05-19 22:18:28 | INFO     | pipeline.runner | Timestamp: 2026-05-19T22:18:28.213168
+2026-05-19 22:18:28 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:18:28 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:18:28 | INFO     | pipeline.runner | STAGE 1: SCRAPING
+2026-05-19 22:18:28 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:18:28 | INFO     | pipeline.runner | 
+── Running: PublicLists (Curated + Open Data) ──
+2026-05-19 22:18:30 | INFO     | pipeline.runner |   ✓ 118 records in 2.3s
+2026-05-19 22:18:30 | INFO     | pipeline.runner | 
+── Running: OpenVC ──
+2026-05-19 22:18:33 | INFO     | pipeline.runner |   ✓ 0 records in 2.8s
+2026-05-19 22:18:33 | INFO     | pipeline.runner | 
+── Running: VC Websites (Async) ──
+2026-05-19 22:19:10 | INFO     | pipeline.runner |   ✓ 50 records in 37.3s
+2026-05-19 22:19:10 | INFO     | pipeline.runner | 
+Total raw records collected: 168
+2026-05-19 22:19:10 | INFO     | pipeline.runner | Raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined.json
+2026-05-19 22:19:10 | INFO     | pipeline.runner | Added 3250 curated investor records from C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\curated_2500_investors.json
+2026-05-19 22:19:11 | INFO     | pipeline.runner | Combined raw data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\raw\raw_combined_with_curated.json
+2026-05-19 22:19:11 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 22:19:11 | INFO     | pipeline.runner | STAGE 2: CLEANING
+2026-05-19 22:19:11 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:19:11 | INFO     | pipeline.runner | Cleaned data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\cleaned.json
+2026-05-19 22:19:11 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 22:19:11 | INFO     | pipeline.runner | STAGE 3: DEDUPLICATION
+2026-05-19 22:19:11 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:19:12 | INFO     | pipeline.runner | Deduped data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\processed\deduped.json
+2026-05-19 22:19:12 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 22:19:12 | INFO     | pipeline.runner | STAGE 4: ENRICHMENT (rule-based only)
+2026-05-19 22:19:12 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:19:13 | INFO     | pipeline.runner | Enriched data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\enriched\enriched.json
+2026-05-19 22:19:13 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 22:19:13 | INFO     | pipeline.runner | STAGE 5: VALIDATION
+2026-05-19 22:19:13 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:19:13 | INFO     | pipeline.runner | Validated data saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validated.json
+2026-05-19 22:19:13 | INFO     | pipeline.runner | Validation stats saved → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\data\validated\validation_stats.json
+2026-05-19 22:19:13 | INFO     | pipeline.runner | 
+── Validation Report ──
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   Total:    2112
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   Valid:    2112
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   Invalid:  0
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   Warnings: 0
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   Avg Quality Score: 0.988
+2026-05-19 22:19:13 | INFO     | pipeline.runner | 
+── Field Coverage ──
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   investor_name                  ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   investor_type                  ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   firm_name                      ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   website_url                    ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   country                        ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   geo_focus                      ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   sector_focus                   ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   source_url                     ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   data_source                    ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   date_collected                 ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   investment_stage               ████████████████████ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   investment_thesis              ███████████████████░ 100%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   ticket_size                    ███████████████████░ 95%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   contact_email                  ██████████████████░░ 94%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   key_partners                   ██████████████████░░ 94%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   city_region                    ██████████████████░░ 94%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   portfolio_companies            ██████████████████░░ 94%
+2026-05-19 22:19:13 | INFO     | pipeline.runner |   linkedin_url                   ██████████████████░░ 94%
+2026-05-19 22:19:13 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 22:19:13 | INFO     | pipeline.runner | STAGE 6: EXPORT
+2026-05-19 22:19:13 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:19:14 | INFO     | pipeline.runner | 
+============================================================
+2026-05-19 22:19:14 | INFO     | pipeline.runner | PIPELINE COMPLETE
+2026-05-19 22:19:14 | INFO     | pipeline.runner |   Scraped records: 168
+2026-05-19 22:19:14 | INFO     | pipeline.runner |   Raw combined:    3418
+2026-05-19 22:19:14 | INFO     | pipeline.runner |   After cleaning:  3418
+2026-05-19 22:19:14 | INFO     | pipeline.runner |   After dedup:     2112
+2026-05-19 22:19:14 | INFO     | pipeline.runner |   After enrich:    2112
+2026-05-19 22:19:14 | INFO     | pipeline.runner |   Valid & exported:2112
+2026-05-19 22:19:14 | INFO     | pipeline.runner |   Elapsed: 46.7s
+2026-05-19 22:19:14 | INFO     | pipeline.runner | ============================================================
+2026-05-19 22:19:14 | INFO     | pipeline.runner | Run summary → C:\Users\A. SPOORTHY REDDY\Desktop\code\investor_pipeline_complete\investor_pipeline\output\run_summary.json

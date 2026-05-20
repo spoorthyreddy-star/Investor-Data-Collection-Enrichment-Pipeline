@@ -1,0 +1,33 @@
+2026-05-19 09:20:57 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [No address associated with hostname]
+2026-05-19 09:21:03 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [No address associated with hostname]
+2026-05-19 09:21:08 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Name or service not known]
+2026-05-19 09:21:17 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records
+2026-05-19 15:21:02 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 15:21:09 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 15:21:12 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Domain name not found]
+2026-05-19 15:21:27 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records
+2026-05-19 15:31:19 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 15:31:27 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 15:31:30 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Domain name not found]
+2026-05-19 15:31:45 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records
+2026-05-19 16:00:56 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 16:01:03 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 16:01:07 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Domain name not found]
+2026-05-19 16:01:08 | WARNING  | scraper.vc_websites | Fetch error [https://kimaventures.com]: 
+2026-05-19 16:01:21 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records
+2026-05-19 16:09:42 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 16:09:48 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 16:09:54 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Domain name not found]
+2026-05-19 16:10:06 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records
+2026-05-19 16:15:33 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 16:15:39 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 16:15:45 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Domain name not found]
+2026-05-19 16:15:59 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records
+2026-05-19 17:38:19 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 17:38:27 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 17:38:31 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Domain name not found]
+2026-05-19 17:38:43 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records
+2026-05-19 22:18:46 | WARNING  | scraper.vc_websites | Fetch error [https://blumeventures.com]: Cannot connect to host blumeventures.com:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 22:18:52 | WARNING  | scraper.vc_websites | Fetch error [https://gic.com.sg]: Cannot connect to host gic.com.sg:443 ssl:default [DNS server returned answer with no data]
+2026-05-19 22:18:55 | WARNING  | scraper.vc_websites | Fetch error [https://chimeraad.com]: Cannot connect to host chimeraad.com:443 ssl:default [Domain name not found]
+2026-05-19 22:19:10 | INFO     | scraper.vc_websites | VC Websites scrape complete: 50 records

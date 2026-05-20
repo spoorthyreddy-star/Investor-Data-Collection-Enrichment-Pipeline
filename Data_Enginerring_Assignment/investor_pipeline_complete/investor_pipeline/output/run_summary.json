@@ -1,0 +1,44 @@
+{
+  "started_at": "2026-05-19T22:18:28.213461",
+  "scraped_records": 168,
+  "raw_records": 3418,
+  "cleaned_records": 3418,
+  "deduped_records": 2112,
+  "enriched_records": 2112,
+  "valid_records": 2112,
+  "validation_stats": {
+    "total": 2112,
+    "valid": 2112,
+    "invalid": 0,
+    "warnings_only": 0,
+    "avg_quality_score": 0.988,
+    "field_coverage": {
+      "investor_name": 1.0,
+      "investor_type": 1.0,
+      "firm_name": 1.0,
+      "website_url": 1.0,
+      "country": 1.0,
+      "geo_focus": 1.0,
+      "sector_focus": 1.0,
+      "source_url": 1.0,
+      "data_source": 1.0,
+      "date_collected": 1.0,
+      "city_region": 0.943,
+      "investment_thesis": 0.997,
+      "investment_stage": 1.0,
+      "ticket_size": 0.951,
+      "portfolio_companies": 0.943,
+      "key_partners": 0.944,
+      "contact_email": 0.945,
+      "linkedin_url": 0.943
+    }
+  },
+  "output_paths": {
+    "csv": "C:\\Users\\A. SPOORTHY REDDY\\Desktop\\code\\investor_pipeline_complete\\investor_pipeline\\output\\Investor_Dataset.csv",
+    "json": "C:\\Users\\A. SPOORTHY REDDY\\Desktop\\code\\investor_pipeline_complete\\investor_pipeline\\output\\Investor_Dataset.json",
+    "excel": "C:\\Users\\A. SPOORTHY REDDY\\Desktop\\code\\investor_pipeline_complete\\investor_pipeline\\output\\Investor_Dataset.xlsx",
+    "summary": "C:\\Users\\A. SPOORTHY REDDY\\Desktop\\code\\investor_pipeline_complete\\investor_pipeline\\output\\pipeline_summary.json"
+  },
+  "elapsed_seconds": 46.7,
+  "completed_at": "2026-05-19T22:19:14.917303"
+}
